@@ -1,0 +1,5 @@
+payment_key.txt
+.venv
+node_modules
+
+__pycache__
