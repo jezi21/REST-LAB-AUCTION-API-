@@ -1,0 +1,42 @@
+version: '3.9'
+services:
+  auction_api:
+    build:
+      context: ./auction_api
+      dockerfile: Dockerfile
+    ports:
+      - "8001:8000"
+    volumes:
+      - auction_api_db:/app/db
+
+  payment_api:
+    build:
+      context: ./payment_api
+      dockerfile: Dockerfile
+    ports:
+      - "8002:8000"
+    volumes:
+      - payment_api_db:/app/db
+
+
+  users_api:
+    build:
+      context: ./users_api
+      dockerfile: Dockerfile
+    ports:
+      - "8003:8000"
+    volumes:
+      - users_api_db:/app/db
+
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+
+volumes:
+  auction_api_db:
+  payment_api_db:
+  users_api_db:

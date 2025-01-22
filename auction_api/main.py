@@ -18,7 +18,7 @@ def str_to_date(date_str:str)->datetime:
 
 import models, schemas
 
-USERS_API_URL = "http://127.0.0.1:8000/"
+USERS_API_URL = "http://users_api:8000/"
 
 models.Base.metadata.create_all(bind=engine)
 

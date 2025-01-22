@@ -1,8 +1,8 @@
 
 
-const USERS_URL = 'http://localhost:8000/'
 const AUCTIONS_URL = 'http://localhost:8001/'
 const PAYMENTS_URL = 'http://localhost:8002/'
+const USERS_URL = 'http://localhost:8003/'
 
 function getToken() {
   return localStorage.getItem('token')

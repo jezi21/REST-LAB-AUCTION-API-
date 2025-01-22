@@ -7,7 +7,7 @@ function bidModal({ auction, setIsActive }) {
   const [bid, setBid] = createSignal(0);
   const handleBid = () => {
     const body = {
-      amount: bid(),
+      "amount": Number(bid()),
     };
     post(`${AUCTIONS_URL}auctions/${auction.id}/bid`, body).then((data) => {
       setIsActive(false);

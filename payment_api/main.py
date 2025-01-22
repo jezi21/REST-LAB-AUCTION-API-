@@ -16,7 +16,7 @@ import stripe
 import models, schemas
 
 FRONTEND_URL = "http:///127.0.0.1:3000/"
-USERS_API_URL = "http://127.0.0.1:8000/"
+USERS_API_URL = "http://127.0.0.1:8003/"
 AUCTION_API_URL = "http://127.0.0.1:8001/"
 
 
